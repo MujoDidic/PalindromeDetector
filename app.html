@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>Fizz Buzz</title>
+    <title>PD</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +23,7 @@
 <!-- === Nav Section -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="/img/Color logo - no background.png" class="d-inline-block align-text-top" height="24"> Fizz Buzz</a>
+        <a class="navbar-brand" href="https://mujodidic.com/"><img src="/img/Color logo - no background.png" class="d-inline-block align-text-top" height="24"> Palindrome detector</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
                     <a class="nav-link" href="code.html">Code</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="https://github.com/MujoDidic/FizzBuzzSite">Git Hub</a>
+                    <a class="nav-link" target="_blank" href="https://github.com/MujoDidic/PalindromeDetector">Git Hub</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="_blank" href="https://mujodidic.com">About</a>
@@ -53,47 +53,28 @@
 
 <!-- === Main === -->
 <main class="flex-shrink-0">
-    <div class="container mt-4">
-        <div class="row row-cols-1 row-cols-lg-2">
-            <div class="col col-lg-4 border-2 border-end">
-                <h1 class="appName border-2 border-bottom">Fizz and Buzz</h1>
-                <h4 class="lead">
-                    With this app user can see in live action how works Website that uses Javascript as frontend programming language.
-                </h4>
-                <h2 class="mt-5 border-2 border-bottom">Instructions:</h2>
-                <p class="pColor">Enter a start and end value into desiganted field than press "Run" button</p>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 mt-5">
+            <div class="col">
+                <h1 class="display-5 fw-bold lh-1 mb-5">Palindrome Detector:A coding project</h1>
+                <h4 class="lead border-2 border-bottom border-success mb-4">This is coding project checks if inputed word is a Palindrome and it is writen in Javascript.</h4>
             </div>
-            <div class="col col-lg-8">
-                <div class="row">
-                    <div>
-                        <h5>
-                            Enter values
-                        </h5>
-                        <form class="row gy-2 gx-2">
-                            <div class="col">
-                                <input id="fizzValue" type="number" class="form-control" placeholder="Start value"
-                                 value="3" aria-label="Fizz value">
-                            </div>
-                            <div class="col">
-                                <input id="buzzValue" type="number" class="form-control" placeholder="End value" 
-                                 value="5" aria-label="Buzz value">
-                            </div>
-                            <div class="col-12 d-flex justify-content-end">
-                                <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Run</button>
-                            </div>
-                        </form>
-                        <h2 class="mt-5 border-bottom border-2">Results</h2>
-                        <div>
-                            <div class="table-responsive">
-                                <table class="table table-striped table-sm">
-                                    <tbody id="results">
-                                        <!--Results from JS-->
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+            <div class="col">
+                <h5 class="border-1 border-bottom border-success">Enter a Word:</h5>
+                <form class="row gx-3 gy-2">
+                    <div class="col">
+                        <input id="inputString" type="text" class="form-control" placeholder="Enter a string" aria-label="Enter a string">
                     </div>
-                </div>
+                    <div class="col-12">
+                        <button type="button" id="bntSubmit" class="btn btn-success">Run</button>
+                    </div>
+                    <div class="alert alert-secondary mt-5 invisible fade show" id="alert" role="alert">
+                        <h4 class="alert-heading">String reversed</h4>
+                        <p class="mb-0" id="msg">
+                            <!--Message/string from JS-->
+                        </p>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -109,7 +90,7 @@
                 <div><span class="text-muted">&copy;2022</span> Mujo Didic | <a href="https://mujodidic.com"> mujodidic.com</a></div>
             </div>
             <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                <img src="/img/Color logo - no background.png" height="24">
+                <a href="https://mujodidic.com"><img src="/img/Color logo - no background.png" height="24"></a>
             </div>
             <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
                 <div class="row">
